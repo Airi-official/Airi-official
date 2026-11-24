@@ -1,76 +1,45 @@
 <div align="center">
-  <img src="assets/profile-banner.svg" alt="Airi Top-up — a bold, playful digital top-up storefront concept" width="100%" />
+  <img src="assets/profile-banner.svg" alt="AiriBot — a personal Discord bot project" width="100%" />
 </div>
 
 <div align="center">
-  <a href="#catalog">EXPLORE THE CATALOG</a> &nbsp;·&nbsp;
-  <a href="#the-flow">HOW IT WORKS</a> &nbsp;·&nbsp;
-  <a href="https://github.com/Airi-official/AiriBot">MEET AIRIBOT</a>
+  <a href="#about">ABOUT</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Airi-official/AiriBot">AIRIBOT</a> &nbsp;·&nbsp;
+  <a href="#copyright">COPYRIGHT</a>
 </div>
 
 ---
 
 <div align="center">
 
-## Your next top-up, minus the detour.
+## AiriBot, made by Sairi(N).
 
-A bright, no-fuss storefront concept for digital credits and gift cards.
-Pick a category, find your favorite, and get back to what you love.
+A personal project focused on building a useful, configurable Discord bot.
+This GitHub profile is maintained by the bot’s creator—not a company or official organization.
 
 </div>
 
-### `01` / The quick route
+### About the project
 
-|  |  |
-|:--|:--|
-| **01 — Choose** | Browse a category and find the digital good you need. |
-| **02 — Check** | Review the product and its details before continuing. |
-| **03 — Continue** | Follow the product’s official purchase flow. |
+AiriBot is a prefix-based Discord bot built with Python and discord.py. It includes utility, moderation, profile, server-information, fun, and time-related commands.
 
-<a id="catalog"></a>
+[Visit the AiriBot repository →](https://github.com/Airi-official/AiriBot)
 
-### `02` / Browse the catalog
+### Project information
 
-<table>
-  <tr>
-    <td width="50%">
-      <strong>🎮 &nbsp; Game credits</strong><br />
-      <sub>Top-ups for your next session</sub><br /><br />
-      <a href="https://github.com/Airi-official/AiriBot">Explore with AiriBot →</a>
-    </td>
-    <td width="50%">
-      <strong>🎁 &nbsp; Gift cards</strong><br />
-      <sub>Digital gifts for every kind of player</sub><br /><br />
-      <a href="https://github.com/Airi-official/AiriBot">Explore with AiriBot →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <strong>📱 &nbsp; Mobile top-ups</strong><br />
-      <sub>Keep your everyday essentials topped up</sub><br /><br />
-      <a href="https://github.com/Airi-official/AiriBot">Explore with AiriBot →</a>
-    </td>
-    <td width="50%">
-      <strong>✨ &nbsp; More to discover</strong><br />
-      <sub>A little something for your digital life</sub><br /><br />
-      <a href="https://github.com/Airi-official/AiriBot">Explore with AiriBot →</a>
-    </td>
-  </tr>
-</table>
+- **Creator:** Sairi(N)
+- **Project:** AiriBot
+- **Official documents:** None are published at this time.
+- **Contact:** For questions or support, please open an issue in the [AiriBot repository](https://github.com/Airi-official/AiriBot/issues).
 
-<a id="the-flow"></a>
+<a id="copyright"></a>
 
-### `03` / Made for the quick click
+### Copyright
 
-- **Clear categories** — get to the right kind of top-up without digging.
-- **Simple by design** — product details stay easy to scan.
-- **A little more personality** — because utility doesn’t have to look generic.
+© Sairi(N). AiriBot and original project materials are created and maintained by Sairi(N). Names, logos, and other materials belonging to Discord or third parties remain the property of their respective owners. This profile does not claim affiliation with Discord.
 
 ---
 
 <div align="center">
-  <sub>Airi Top-up is a storefront design concept. Product discovery currently points to <a href="https://github.com/Airi-official/AiriBot">AiriBot</a>; this profile page does not process payments.</sub>
-  <br /><br />
-  <a href="https://github.com/Airi-official">AIRI OFFICIAL</a> &nbsp;·&nbsp;
-  <a href="https://github.com/Airi-official/AiriBot">BUILT WITH AIRIBOT</a>
+  <sub>Personal creator profile for AiriBot. Not a company, store, or official organization.</sub>
 </div>
