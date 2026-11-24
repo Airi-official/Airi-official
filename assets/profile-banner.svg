@@ -1,139 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">AiriBot — made by Sairi(N)</title>
-  <desc id="desc">An animated navy and sky-blue banner for AiriBot, a configurable Python Discord bot.</desc>
+  <title id="title">Sairi(N) — Japanese-inspired creator banner</title>
+  <desc id="desc">A dreamy anime-inspired night scene with a glowing moon, distant mountains, cherry blossoms, and the name Sairi(N).</desc>
 
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#090D1D"/>
-      <stop offset="0.55" stop-color="#111936"/>
-      <stop offset="1" stop-color="#172648"/>
+    <linearGradient id="sky" x1="72" y1="20" x2="1115" y2="412" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17152F"/>
+      <stop offset=".48" stop-color="#352348"/>
+      <stop offset="1" stop-color="#A64F70"/>
     </linearGradient>
-    <linearGradient id="botCard" x1="790" y1="80" x2="1070" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#86CFFF"/>
-      <stop offset="1" stop-color="#5865F2"/>
+    <linearGradient id="titleFill" x1="115" y1="152" x2="688" y2="245" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F2"/>
+      <stop offset=".55" stop-color="#FFD9E2"/>
+      <stop offset="1" stop-color="#F3A9C6"/>
     </linearGradient>
-    <linearGradient id="aqua" x1="70" y1="210" x2="670" y2="210" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#AEE8FF"/>
+    <linearGradient id="moonFill" x1="818" y1="55" x2="1022" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9E8"/>
+      <stop offset="1" stop-color="#F7BDD0"/>
     </linearGradient>
-    <radialGradient id="glow">
-      <stop stop-color="#5865F2" stop-opacity=".38"/>
-      <stop offset="1" stop-color="#5865F2" stop-opacity="0"/>
+    <radialGradient id="moonGlow" cx="0" cy="0" r="1" gradientTransform="matrix(0 185 -185 0 919 152)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD9E4" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#FFD9E4" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#9DDFFF" stroke-opacity=".055" stroke-width="1"/>
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="18" r="1" fill="#FFF" fill-opacity=".12"/>
+      <circle cx="74" cy="42" r=".8" fill="#FFF" fill-opacity=".1"/>
+      <circle cx="101" cy="96" r="1" fill="#FFF" fill-opacity=".09"/>
+      <circle cx="39" cy="108" r=".7" fill="#FFF" fill-opacity=".12"/>
     </pattern>
-    <filter id="shadow" x="720" y="38" width="405" height="360" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#02040C" flood-opacity=".55"/>
-    </filter>
-    <filter id="textGlow" x="40" y="105" width="650" height="190" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
+    <filter id="softGlow" x="65" y="95" width="660" height="190" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="shadow" x="780" y="32" width="280" height="280" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <g id="sakura" fill="#FFD5E0">
+      <ellipse cy="-9" rx="4.7" ry="8"/>
+      <ellipse cy="9" rx="4.7" ry="8"/>
+      <ellipse cx="-9" rx="8" ry="4.7"/>
+      <ellipse cx="9" rx="8" ry="4.7"/>
+      <circle r="3" fill="#F3A9C6"/>
+    </g>
   </defs>
 
-  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
-  <circle cx="1020" cy="210" r="270" fill="url(#glow)"/>
-  <circle cx="1125" cy="55" r="110" fill="#5865F2" fill-opacity=".10"/>
+  <rect width="1200" height="420" rx="28" fill="url(#sky)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grain)"/>
+  <path d="M0 338 126 271l83 42 111-100 117 115 108-75 107 84 127-129 105 85 102-63 114 88v82H0z" fill="#211C38" fill-opacity=".72"/>
+  <path d="m0 371 141-66 111 53 131-79 111 74 119-44 128 55 112-66 109 57 118-51 120 54v62H0z" fill="#17182F" fill-opacity=".88"/>
+  <path d="M0 375c158-23 255 20 406 1 173-22 271-16 416 3 143 19 252-11 378-24v65H0z" fill="#13162C"/>
 
-  <!-- animated ambient particles -->
-  <g fill="#AEE8FF">
-    <circle cx="718" cy="92" r="3" opacity=".7">
-      <animate attributeName="cy" values="92;82;92" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".7;.25;.7" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1112" cy="370" r="4" opacity=".45">
-      <animate attributeName="cy" values="370;358;370" dur="5.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="704" cy="305" r="2" fill="#C6B7FF">
-      <animate attributeName="cx" values="704;714;704" dur="4.6s" repeatCount="indefinite"/>
-    </circle>
+  <!-- moonlit Japanese-inspired landscape -->
+  <circle cx="920" cy="157" r="145" fill="url(#moonGlow)"/>
+  <circle cx="920" cy="157" r="86" fill="#F9D7DE" fill-opacity=".12" filter="url(#shadow)"/>
+  <circle cx="920" cy="157" r="70" fill="url(#moonFill)"/>
+  <path d="M879 122c17-17 42-22 62-14-19 4-34 20-37 40-3 21 9 40 27 48-27 4-53-12-61-38-4-13 0-27 9-36z" fill="#EAA6BC" fill-opacity=".48"/>
+  <circle cx="951" cy="137" r="8" fill="#E8A6BC" fill-opacity=".4"/>
+  <circle cx="946" cy="183" r="13" fill="#E8A6BC" fill-opacity=".28"/>
+
+  <!-- distant torii silhouette -->
+  <g stroke="#D887A8" stroke-opacity=".68" stroke-width="8" stroke-linecap="round">
+    <path d="M891 295v-45m58 45v-45M878 250h84m-73-13h62"/>
+    <path d="m878 237-10-5m86 5 10-5" stroke-width="5"/>
   </g>
 
-  <!-- identity -->
-  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
-    <g transform="translate(72 74)">
-      <rect width="15" height="15" rx="4" fill="#5865F2"/>
-      <rect x="20" y="3" width="84" height="9" rx="4.5" fill="#5865F2" fill-opacity=".55"/>
-      <text x="116" y="13" fill="#AEE8FF" font-size="13" font-weight="800" letter-spacing="3.2">DISCORD BOT</text>
-    </g>
-
-    <text x="70" y="188" fill="url(#aqua)" font-size="82" font-weight="900" letter-spacing="-4">AiriBot</text>
-    <circle cx="430" cy="173" r="10" fill="#57D5A7">
-      <animate attributeName="r" values="8;11;8" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;.65;1" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-
-    <text x="72" y="232" fill="#CDD7EA" font-size="19" font-weight="600">A configurable companion for your server</text>
-
-    <g transform="translate(72 274)">
-      <rect width="166" height="44" rx="22" fill="#5865F2" fill-opacity=".18" stroke="#5865F2" stroke-opacity=".75"/>
-      <circle cx="24" cy="22" r="5" fill="#57D5A7"/>
-      <text x="38" y="28" fill="#EAF2FF" font-size="14" font-weight="750" letter-spacing=".5">UTILITIES</text>
-
-      <rect x="178" width="187" height="44" rx="22" fill="#5865F2" fill-opacity=".18" stroke="#5865F2" stroke-opacity=".75"/>
-      <path d="M203 14v16m-8-8h16" stroke="#AEE8FF" stroke-width="3" stroke-linecap="round"/>
-      <text x="220" y="28" fill="#EAF2FF" font-size="14" font-weight="750" letter-spacing=".5">MODERATION</text>
-
-      <rect x="377" width="144" height="44" rx="22" fill="#5865F2" fill-opacity=".18" stroke="#5865F2" stroke-opacity=".75"/>
-      <path d="M402 17l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" fill="#F7C66A"/>
-      <text x="419" y="28" fill="#EAF2FF" font-size="14" font-weight="750" letter-spacing=".5">FUN</text>
-    </g>
-
-    <text x="72" y="369" fill="#7F91AF" font-size="14" font-weight="650" letter-spacing="1.2">CREATED BY SAIRI(N)</text>
+  <!-- stars -->
+  <g fill="#FFF1E9">
+    <circle cx="766" cy="82" r="2.5"/><circle cx="1092" cy="102" r="2"/>
+    <circle cx="1069" cy="221" r="2.5"/><circle cx="825" cy="211" r="1.7"/>
+    <circle cx="742" cy="159" r="1.8"/><circle cx="1142" cy="164" r="1.6"/>
+    <path d="M1090 278v10m-5-5h10M785 260v8m-4-4h8" stroke="#FFF1E9" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
-  <!-- bot profile card -->
-  <g filter="url(#shadow)">
-    <rect x="756" y="58" width="340" height="304" rx="30" fill="#0E1428" stroke="#8596BC" stroke-opacity=".28" stroke-width="2"/>
-
-    <!-- card header -->
-    <rect x="756" y="58" width="340" height="66" rx="30" fill="#151D38"/>
-    <path d="M756 124h340" stroke="#8596BC" stroke-opacity=".16"/>
-    <circle cx="788" cy="91" r="15" fill="#5865F2"/>
-    <circle cx="783" cy="87" r="5" fill="#AEE8FF"/>
-    <circle cx="793" cy="87" r="5" fill="#AEE8FF"/>
-    <path d="M783 97c6 5 14 5 20 0" stroke="#AEE8FF" stroke-width="3" stroke-linecap="round"/>
-
-    <text x="814" y="86" fill="#F4F7FF" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">AiriBot</text>
-    <text x="814" y="106" fill="#57D5A7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700">● ONLINE</text>
-
-    <!-- chat area -->
-    <g transform="translate(780 146)">
-      <rect width="292" height="72" rx="18" fill="#1A2546"/>
-      <circle cx="28" cy="27" r="13" fill="#5865F2"/>
-      <text x="28" y="32" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="900">&gt;</text>
-      <text x="52" y="31" fill="#DDE8FF" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700">serverinfo</text>
-      <text x="52" y="52" fill="#8798B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12">prefix-based commands</text>
-    </g>
-
-    <g transform="translate(780 230)">
-      <rect width="292" height="105" rx="18" fill="url(#botCard)"/>
-      <circle cx="26" cy="26" r="10" fill="#FFFFFF" fill-opacity=".95"/>
-      <path d="M21 26l3 3 7-8" stroke="#5865F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="48" y="31" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="850">Server status</text>
-
-      <g transform="translate(24 48)">
-        <rect width="76" height="38" rx="10" fill="#FFFFFF" fill-opacity=".16"/>
-        <text x="38" y="24" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="800">READY</text>
-        <rect x="84" width="76" height="38" rx="10" fill="#FFFFFF" fill-opacity="16"/>
-        <text x="122" y="24" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="800">PYTHON</text>
-        <rect x="168" width="76" height="38" rx="10" fill="#FFFFFF" fill-opacity=".16"/>
-        <text x="206" y="24" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="800">ONLINE</text>
-      </g>
-
-      <g transform="translate(260 18)">
-        <circle r="7" fill="#57D5A7">
-          <animate attributeName="r" values="6;9;6" dur="1.8s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    </g>
+  <!-- sakura branches and drifting petals -->
+  <g stroke="#D889A5" stroke-width="3" stroke-linecap="round" stroke-opacity=".72">
+    <path d="M1192 24c-51 44-81 85-112 139m54-81-36-15m59-11-3-31m-48 83-36 1m87-45 26-21"/>
+    <path d="M18 281c36-28 62-57 86-96m-57 67 2-29m29 7 28-14m-49 42-23 10" stroke-opacity=".42"/>
+  </g>
+  <g opacity=".95">
+    <use href="#sakura" transform="translate(1083 162) scale(.8)"/>
+    <use href="#sakura" transform="translate(1125 99) scale(.55)"/>
+    <use href="#sakura" transform="translate(1135 48) scale(.72)"/>
+    <use href="#sakura" transform="translate(1043 83) scale(.48)"/>
+    <use href="#sakura" transform="translate(72 195) scale(.55)"/>
+    <use href="#sakura" transform="translate(1110 332) scale(.42)" opacity=".75"/>
+  </g>
+  <g fill="#FFD5E0" opacity=".8">
+    <path d="M728 119c12-8 19-4 19 1-1 7-11 11-19 13 3-5 3-9 0-14z"/>
+    <path d="M1038 306c11-8 18-4 18 1-1 7-11 11-19 13 3-5 3-9 1-14z"/>
+    <path d="M794 335c9-7 15-3 15 1-1 6-9 9-16 11 2-4 2-8 1-12z"/>
   </g>
 
-  <!-- python/code accent -->
-  <g opacity=".55">
-    <path d="M84 342h430" stroke="#5865F2" stroke-opacity=".35"/>
-    <text x="514" y="346" fill="#8090AE" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">PYTHON · DISCORD.PY</text>
+  <!-- creator identity -->
+  <g font-family="Georgia, 'Yu Mincho', 'Hiragino Mincho ProN', serif">
+    <text x="88" y="121" fill="#F3B7CC" font-size="15" font-weight="600" letter-spacing="6">CREATOR  ·  DREAMER</text>
+    <path d="M89 143h94" stroke="#E9A9C1" stroke-opacity=".78"/>
+    <text x="78" y="236" fill="#F6AFC8" fill-opacity=".28" font-size="91" font-weight="700" letter-spacing="1" filter="url(#softGlow)">Sairi(N)</text>
+    <text x="78" y="236" fill="url(#titleFill)" font-size="91" font-weight="700" letter-spacing="1">Sairi(N)</text>
+    <text x="91" y="281" fill="#FFE8EE" font-size="21" letter-spacing="2">サイリ — let your dreams bloom</text>
+    <text x="91" y="330" fill="#F5C4D3" fill-opacity=".78" font-size="13" letter-spacing="4">桜の夜に、想いを込めて</text>
   </g>
+
+  <rect x="1" y="1" width="1198" height="418" rx="27" stroke="#FFE7EF" stroke-opacity=".18" stroke-width="2"/>
 </svg>
